@@ -1,0 +1,82 @@
+.user--picture{
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    max-width: 250px;
+    width: 250px;
+}
+.relative--position{
+    position: relative;
+}
+.full--width{
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.flex--1{
+    flex: 1;
+}
+.flex--2{
+    flex: 2;
+}
+.white--font{
+    color: white;
+}
+.relative--position{
+    position: relative; 
+}
+.position--absolute{
+    position: absolute !important;
+}
+.sliding--up{
+    height: 50px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+.bottom--zero{
+    bottom: 0
+}
+.one-third--width{
+    width: 33%;
+}
+.min--height--250{
+    min-height: 250px;
+}
+.circluar--picture{
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    width: 90%;
+    display: none;
+}
+.media--flex{
+    display: block;
+}
+.media--flex .flex--1{
+    display: none !important;
+}
+.padding--5px{
+    padding: 5px;
+}
+.relative--position{
+    position: relative !important;
+}
+@media(max-width: 512px){
+    .ui.label{
+        display: none !important;
+    }
+}
+@media(max-width: 768px){
+    #user--profile--picture{
+        display: none !important;
+    }
+    .circluar--picture{
+        display: block !important;
+    }
+    .media--flex{
+        display: flex !important;
+    }
+    .media--flex .flex--1{
+        display: block !important;
+    }
+}

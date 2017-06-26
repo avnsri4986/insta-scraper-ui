@@ -1,0 +1,22 @@
+{
+  "name": "buildmatic",
+  "description": "angular2 skeleton",
+  "main": "",
+  "authors": [
+    "avneesh.srivastava@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "fontawesome#^4.7.0",
+    "semantic": "semantic-ui#^2.2.9"
+  }
+}

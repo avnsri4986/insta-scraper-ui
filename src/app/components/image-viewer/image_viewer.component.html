@@ -1,0 +1,27 @@
+<div class='media--pictures' (scroll)="onScroll($event)">
+    <div class='relative--position' *ngFor='let display_img of user_info.media.nodes'>
+        <img *ngIf='!getViewUrl(display_img,"is_video")' class='image' [src]='getViewUrl(display_img,"display")' [alt]='getViewUrl(display_img,"caption")' [style.height.px]="mediaHeight-20" />
+        <div class="overlay">
+            <div class="text">
+                <div>
+                    <i class="fa fa-thumbs-up indicator--icons" aria-hidden="true"></i> {{getViewUrl(display_img,"likes")}}
+                </div>
+                <br/>
+                <div>
+                    <i class="fa fa-comment indicator--icons" aria-hidden="true"></i> {{getViewUrl(display_img,"comment")}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='relative--position lock--message' *ngIf='user_info["is_private"]'>
+        <div>
+            <i class="fa fa-lock fa-4x font--size75em" aria-hidden="true"></i>
+        </div>
+        <div>
+            <h3>
+                Oops! We can't display the pictures.<br/>
+                User account seems to be locked.
+            </h3>
+        </div>
+    </div>
+</div>

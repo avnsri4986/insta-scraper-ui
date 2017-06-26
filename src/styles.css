@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+    height: 100vh !important;
+    background: #F3904F !important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F3904F , #3B4371) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F3904F , #3B4371) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+.relativePosition{
+    position: relative;
+    z-index: 5;
+}
+.body--overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.flex{
+    display: flex;
+}
+.flex.flex--column{
+    flex-direction: column;
+}
+.flex.flex--center{
+    justify-content: center;
+}
+.flex.flex--end{
+    justify-content: flex-end;
+}
+.flex.flex--row{
+    flex-direction: row;
+}
+.flex.flex--middle{
+    align-items: center;
+}
+.flex.flex--space-between{
+    justify-content: space-between;
+}
+.header--font{
+    font-size: 1.2em;
+    padding: 5px;
+}
+.padding5px{
+    padding: 5px;
+}
+.white--color{
+    color: ghostwhite !important;
+}
+.black--translucent{
+    background: rgba(0,0,0,0.5) !important;
+}
+.halfWidth{
+    width: 50%;
+}
+.fullWidth{
+    width: 100%;
+}
+.text--decor-none, .text--decor-none:visited, .text--decor-none:active, .text--decor-none:link, .text--decor-none:hover{
+    text-decoration: none !important;
+    color: white;
+}
+.threeFourthWidth{
+    flex: 10;
+}
+.oneFourthWidth{
+    flex: 1;
+}
+.text--center{
+    text-align: center;
+}
+.transition--all{
+    transition: all 0.2s ease-in-out;
+}
+li.active{
+	color: #fff;
+    background-color: #337ab7;
+	border-radius: 5px;
+	text-align: center;
+}
+div.activeTab{
+    transition: all 0.2s ease-in-out;
+    background: #1fc8db; 
+    background: -webkit-linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) !important;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) !important;
+    font-weight: bold !important;
+    border-radius: 5px 0px !important;
+    border: 1px solid rgba(255,255,255,0.5) !important;
+    color: black !important;
+}
+div.activeTab > a{
+    color: black !important;
+    transition: all 0.2s ease-in-out;
+}
+.white--translucent{
+    background: rgba(255,255,255,0.5);
+}
+.fill-in--input{
+    max-width: 100px !important;
+    background: Transparent !important;
+    border: 0 !important;
+    outline: none !important;
+    border-bottom: 1px solid white !important;
+    border-radius: 0 !important;
+    color: white !important;
+    text-align: center !important;
+}
